@@ -7,7 +7,6 @@
           box-sizing: border-box;
   background: transparent;
   font-family: inherit;
-  text-decoration: none;
 }
 
 ol,
@@ -37,12 +36,150 @@ textarea {
 }
 
 button,
-input,
 textarea,
 select {
   -moz-appearance: none !important;
        appearance: none !important;
   -webkit-appearance: none !important;
   border-radius: 0;
+}
+
+body {
+  background-color: #f7e4d4;
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    margin-left: 20px;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #467745;
+}
+
+.card h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 48px;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 520px) {
+  .card h1 {
+    font-size: 36px;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+}
+
+.card ::-webkit-input-placeholder {
+  color: #467745;
+  opacity: 0.6;
+}
+
+.card :-ms-input-placeholder {
+  color: #467745;
+  opacity: 0.6;
+}
+
+.card ::-ms-input-placeholder {
+  color: #467745;
+  opacity: 0.6;
+}
+
+.card ::placeholder {
+  color: #467745;
+  opacity: 0.6;
+}
+
+.card input[type="text"] {
+  width: 100%;
+  max-width: 480px;
+  height: 64px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #467745;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 520px) {
+  .card input[type="text"] {
+    width: 100%;
+  }
+}
+
+.card textarea {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 480px;
+  height: 120px;
+  padding: 15px;
+  color: #467745;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 520px) {
+  .card textarea {
+    width: 100%;
+  }
+}
+
+.card .accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.card .accept input[type="checkbox"] {
+  display: block;
+  height: 20px;
+  width: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 0%;
+  background-color: #ffffff;
+}
+
+.card .accept p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.card button {
+  font-family: "EB Garamond", serif;
+  font-size: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 280px;
+  height: 80px;
+  border-radius: 50px;
+  color: #f7e4d4;
+  background-color: #467745;
 }
 /*# sourceMappingURL=style.css.map */
