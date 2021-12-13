@@ -4,7 +4,7 @@
   border: 0;
   outline: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: transparent;
   font-family: inherit;
 }
@@ -39,7 +39,7 @@ button,
 textarea,
 select {
   -moz-appearance: none !important;
-       appearance: none !important;
+  appearance: none !important;
   -webkit-appearance: none !important;
   border-radius: 0;
 }
@@ -60,18 +60,18 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   width: auto;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #467745;
 }
 
@@ -80,15 +80,15 @@ body {
   font-size: 48px;
   font-weight: 500;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 @media screen and (max-width: 520px) {
   .card h1 {
     font-size: 36px;
     -ms-flex-item-align: baseline;
-        align-self: baseline;
+    align-self: baseline;
   }
 }
 
@@ -157,10 +157,11 @@ body {
   height: 20px;
   width: 20px;
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
+  outline: none;
   border-radius: 0%;
   background-color: #ffffff;
 }
@@ -168,6 +169,7 @@ body {
 .card .accept p {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  line-height: 1.5em;
 }
 
 .card button {
